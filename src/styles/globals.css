@@ -1,0 +1,25 @@
+@import "./tokens.css";
+@import "./motion.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  min-height: 100%;
+  margin: 0;
+}
+body {
+  background: rgb(var(--background));
+  color: rgb(var(--text));
+  font-family: var(--font-sans);
+  text-rendering: optimizeLegibility;
+}
+:focus-visible {
+  outline: 2px solid rgb(var(--focus));
+  outline-offset: 2px;
+}
